@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>document</title>
+        <script>
+            function check()
+            {
+                var i,sum=0;
+                var n= parseFloat(document.getElementById("n").value);
+                for(i=1;i<n;i++)
+            {
+                if(n%i==0)
+            {
+                sum=sum+i;
+            }
+            }
+            if(sum==n)
+            {
+                alert(n +"is perfect");
+            }
+            else if(sum>n)
+            {
+                alert(n +"is abudant");
+
+            }
+            else{
+                alert(n +"is deficient")
+            }
+
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <font color="red"> 
+        <h2 >CHECK</h2>
+        <input type="number" id="n" placeholder="number"> <br> 
+        <button type="button" onclick="check()">check</button>  
+       </font> </center>
+    </body></html>
